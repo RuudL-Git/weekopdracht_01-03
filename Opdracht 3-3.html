@@ -1,0 +1,26 @@
+<script>
+
+    function startzoeken(){
+        var hetwoord = document.getElementById("invoer").value;
+        var deletterinv = document.getElementById("deletter").value;
+        var totaal = 0;
+        for( var x = 0 ; x < hetwoord.length ; x++ ){
+            
+            console.log(hetwoord[x]);
+            if(hetwoord[x]  == deletterinv){
+                totaal++;
+            }
+            
+        }
+        alert(totaal);
+        
+    }
+
+</script>
+
+<input type=text id=invoer>
+
+<input type=button value=klikmaar onclick="startzoeken()">
+
+<hr><hr>
+<input type=text id=deletter>
